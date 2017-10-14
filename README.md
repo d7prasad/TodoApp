@@ -1,6 +1,19 @@
 # TodoApp
 Ionic Todo App
 
+Commands executed in sequence:
+
+Open cmd
+
+```bash
+$ npm install ionic cordova -g //To install ionic & cordava in the machine globally
+$ ionic -v //To check the version
+$ cordova -v // To check cordova version
+$ ionic start todo blank //This will setup ionic project in our local $todo is the app name
+$ ionic lab // This will launch ionic lab, and we can test our changes as needed at runtime.
+
+```
+
 This is a template for [Ionic](http://ionicframework.com/docs/) projects.
 
 ## How to use this template
