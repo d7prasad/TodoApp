@@ -6,6 +6,7 @@ Commands executed in sequence:
 Open cmd
 
 ```bash
+$ sudo apt-get install build-essential - this if for only UBUNTU machine to set-up npm properly in the machine.
 $ npm install ionic cordova -g //To install ionic & cordava in the machine globally
 $ ionic -v //To check the version
 $ cordova -v // To check cordova version
