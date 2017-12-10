@@ -36,7 +36,17 @@ $ ionic link - to link an app,
 $ ionic link --pro-id a5a801c3 to associate an app
 $ git push ionic master - to push the changes
 visit ionic in the we https://dashboard.ionicjs.com/login
+Go [here](https://dashboard.ionicjs.com/app/2ffc9e59/code/builds/list) to view some more commands actually
+e.g:
+$ npm install -g ionic@latest - Install the latest Ionic CLI
 
+$ ionic start --pro-id 2ffc9e59 - Connect your app to Ionic Pro
+
+$ git push ionic master - Push your code up to the dashboard!
+
+4. Add your own external Repository as the default origin (optional)
+$ git remote add origin [YOUR_REPOSITORY_URL]
+$ git push --set-upstream origin master   
 ```
 
 
