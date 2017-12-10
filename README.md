@@ -28,6 +28,18 @@ To create New Page
 $ ionic generate page ArchiveTodos //Delete the archived-todo.modules.ts file once created, else the app may not run properly, and delete @IonicPage() from archived-todos.ts, as we doesn't ' deal with lazy loading as now, since this is part of this todo.ts. Add an entry for this newly created page in app.module.ts by importing it and in the dependencies.
 ```
 
+To Serve ionic to test in mobile
+```bash
+$ ionic serve -c - This will start the app, please install ionic DevApp to view the app connected to the same wifi network
+$ ionic login - To set-up an ionic login details
+$ ionic link - to link an app, 
+$ ionic link --pro-id a5a801c3 to associate an app
+$ git push ionic master - to push the changes
+visit ionic in the we https://dashboard.ionicjs.com/login
+
+```
+
+
 This is a template for [Ionic](http://ionicframework.com/docs/) projects.
 
 ## How to use this template
