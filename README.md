@@ -6,6 +6,7 @@ Commands executed in sequence:
 Open cmd
 
 ```bash
+$ To use Git ssh to push - edit the config with git ssh url - $ git config --local -l or -e(-l - list, -e edit)
 $ sudo apt-get install build-essential - this if for only UBUNTU machine to set-up npm properly in the machine.
 $ npm install ionic cordova -g //To install ionic & cordava in the machine globally
 $ ionic -v //To check the version
@@ -30,6 +31,7 @@ $ ionic generate page ArchiveTodos //Delete the archived-todo.modules.ts file on
 
 To Serve ionic to test in mobile
 ```bash
+
 $ ionic serve -c - This will start the app, please install ionic DevApp to view the app connected to the same wifi network
 $ ionic login - To set-up an ionic login details
 $ ionic link - to link an app, 
@@ -37,6 +39,7 @@ $ ionic link --pro-id a5a801c3 to associate an app
 $ git push ionic master - to push the changes
 visit ionic in the we https://dashboard.ionicjs.com/login
 Go [here](https://dashboard.ionicjs.com/app/2ffc9e59/code/builds/list) to view some more commands actually
+
 e.g:
 $ npm install -g ionic@latest - Install the latest Ionic CLI
 
