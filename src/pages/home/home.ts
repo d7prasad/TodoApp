@@ -12,6 +12,7 @@ export class HomePage {
 
   public todos = [];
   public reorderIsEnabled = false;
+  public recordAvailable = false;
 
   constructor(private toastController: ToastController, private todoService: TodoService, public navCtrl: NavController, private alertController: AlertController) {
     this.todos = this.todoService.getTodos();
@@ -31,6 +32,10 @@ export class HomePage {
 
   archieveTodo(todoIndex){
     this.todoService.archieveTodo(todoIndex);
+    if(this.todos.length<1){
+    this.recordAvailable = false;
+    }
+    console.log(this.todos.length);
   }
 
   editTodo(todoIndex){
@@ -90,6 +95,8 @@ export class HomePage {
           text: "Add Todo",
           handler: (inputData)=> {
             let todoText;
+            this.recordAvailable = true;
+            console.log(this.recordAvailable);
             todoText = inputData.addTodoInput;
             this.todoService.addTodo(todoText);
             // Display toast after the alert window gets dismissed on the screen

@@ -4,8 +4,9 @@
       Todo - PTL
     </ion-title>
     <ion-buttons end>
+      <div *ngIf="recordAvailable" style="display: inline;">
       <button ion-button (click)="toggleReorder()" *ngIf="!reorderIsEnabled">Edit</button>
-      <button ion-button (click)="toggleReorder()" *ngIf="reorderIsEnabled">Done</button>
+      <button ion-button (click)="toggleReorder()" *ngIf="reorderIsEnabled">Done</button></div>
       <button ion-button (click)="openTodoAlert()">
         <ion-icon name="add"></ion-icon>
       </button>
